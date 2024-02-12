@@ -1,0 +1,20 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.8"
+actix-web = "4.5.1"
+actix-web-validator = "5.0.1"
+lazy_static = "1.4.0"
+redis = {version = "0.24.0" , features = ["tokio-comp", "aio", "tokio-native-tls-comp"]}
+serde = "1.0.196"
+serde_json = "1.0.113"
+tokio = {version = "1.36.0", features = ["full"]}
+deku = "0.16.0"
+
+[env]
+REDIS_URL = "redis://yaroslav:aaaaaA1=@redis-17009.c311.eu-central-1-1.ec2.cloud.redislabs.com:17009"
